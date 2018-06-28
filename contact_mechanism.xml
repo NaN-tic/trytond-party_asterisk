@@ -13,6 +13,10 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="name">contact_mechanism_tree_sequence</field>
             <field name="inherit" ref="party.contact_mechanism_view_tree_sequence"/>
         </record>
+        <record model="ir.model.button" id="dial_button">
+            <field name="name">dial</field>
+            <field name="string">Dial</field>
+            <field name="model" search="[('model', '=', 'party.contact_mechanism')]"/>
+        </record>
     </data>
 </tryton>
-    
