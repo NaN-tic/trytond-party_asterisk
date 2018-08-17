@@ -8,9 +8,8 @@ from trytond.pyson import Eval
 __all__ = ['ContactMechanism']
 
 
-class ContactMechanism():
+class ContactMechanism(metaclass=PoolMeta):
     __name__ = "party.contact_mechanism"
-    __metaclass__ = PoolMeta
 
     @classmethod
     def __setup__(cls):
