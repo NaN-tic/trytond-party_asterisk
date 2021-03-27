@@ -5,8 +5,6 @@ from trytond.model import ModelView
 from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval
 
-__all__ = ['ContactMechanism']
-
 
 class ContactMechanism(metaclass=PoolMeta):
     __name__ = "party.contact_mechanism"
